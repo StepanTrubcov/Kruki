@@ -1,7 +1,7 @@
 import { Telegraf } from "telegraf";
-import baza_tests from "./baza_tests.json" assert { type: "json" };
+import baza_tests from "./baza_tests.json" with { type: "json" };
 import shuffle from "./shuffle.js";
-import answerStik from "./answerStik.json" assert { type: "json" };
+import answerStik from "./answerStik.json" with { type: "json" };
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 import Lesson_1 from './Lessons/Lesson_1.js'
