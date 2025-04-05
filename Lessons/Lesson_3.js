@@ -1,3 +1,5 @@
+//Стопица и Запятая
+
 function Lesson_3(ctx, buttonData) {
 
     if (buttonData === "lesson_3") {

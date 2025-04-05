@@ -1,7 +1,4 @@
-import { Telegraf } from "telegraf";
-
-const token = "7919809731:AAHR9IPjbFtZondrgGKtZrP5d6L_b_vsTvA";
-const bot = new Telegraf(token);
+//Пометы
 
 function Lesson_1(ctx, buttonData) {
 
