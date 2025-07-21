@@ -1,34 +1,35 @@
-//Стопица и Запятая
-
 function Lesson_3(ctx, buttonData) {
 
     if (buttonData === "lesson_3") {
-        ctx.reply('УРОК ВТОРОЙ.\nВ этом уроке мы начнём изучать первые крюки. Но для начала нужно узнать как обозначается длительность звучания знамени.' ,
+        ctx.reply('УРОК ТРЕТИЙ.\nВ этом уроке мы продолжим изучать основные крюки, такие как стопицы, запитыи и палки.' ,
             {
                 reply_markup: {
-                    inline_keyboard: [[{ text: "Дальше", callback_data: "Further_2_1" }]],
+                    inline_keyboard: [[{ text: "Дальше", callback_data: "Further_3_1" }]],
                 },
             }
         );
     }
 
     if (buttonData === "Further_3_1") {
-        ctx.reply('Длительность.\nДлительность указавает как долго поётся знамя. Длительность можно прохлопать. Её мы будем обозначать так:\n4/4 - 4 удара\n1/2 - 2 удара\n1/4 - 1 удар\n1/8 - меньше 1 удар',
-            {
-                reply_markup: {
-                    inline_keyboard: [[{ text: "Дальше", callback_data: "Further_2_2" }]],
-                },
-            }
-        );
-    }
-
-    if (buttonData === "Further_3_2") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/YfG3z.png', {
-            caption: 'Название знамени: Крюк; 1 звук c длительностью 1/2',
+        return ctx.replyWithPhoto('https://ltdfoto.ru/images/2025/04/07/SNIMOK-EKRANA-2025-04-07-V-17.32.29.png', {
+            caption: 'Название знамени: Стопица; 1 звук c длительностью 1/2',
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: 'Дальше', callback_data: 'Further_2_3' }
+                        { text: 'Дальше', callback_data: 'Further_3_2' }
+                    ]
+                ]
+            }
+        });
+    }
+
+    if (buttonData === "Further_3_2") {
+        return ctx.replyWithPhoto('https://i.yapx.ru/YrXDC.png', {
+            caption: 'Название знамени: Стопица с отсечкой; 1 звук c длительностью 1/4',
+            reply_markup: {
+                inline_keyboard: [
+                    [
+                        { text: 'Дальше', callback_data: 'Further_3_3' }
                     ]
                 ]
             }
@@ -36,12 +37,12 @@ function Lesson_3(ctx, buttonData) {
     }
 
     if (buttonData === "Further_3_3") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/YfG8O.png', {
-            caption: 'Название знамени: Крюк с отсечкой; 1 звук c длительностью 1/4',
+        return ctx.replyWithPhoto('https://ltdfoto.ru/images/2025/04/07/SNIMOK-EKRANA-2025-04-07-V-17.35.24.png', {
+            caption: 'Название знамени: Стопица с очком; 2 звука вниз по 1/4',
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: 'Дальше', callback_data: 'Further_2_4' }
+                        { text: 'Дальше', callback_data: 'Further_3_4' }
                     ]
                 ]
             }
@@ -49,12 +50,12 @@ function Lesson_3(ctx, buttonData) {
     }
 
     if (buttonData === "Further_3_4") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf9cT.png', {
-            caption: 'Название знамени: Крюк с задержкой; 1 звук c длительностью 4/4',
+        return ctx.replyWithPhoto('https://i.yapx.ru/YrXJF.png', {
+            caption: 'Название знамени: Запятая; 1 звук c длительностью 1/2',
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: 'Дальше', callback_data: 'Further_2_5' }
+                        { text: 'Дальше', callback_data: 'Further_3_5' }
                     ]
                 ]
             }
@@ -62,12 +63,12 @@ function Lesson_3(ctx, buttonData) {
     }
 
     if (buttonData === "Further_3_5") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf9e8.png', {
-            caption: 'Название знамени: Крюк с ломкой; 2 звука вверх по 1/4',
+        return ctx.replyWithPhoto('https://i.yapx.ru/YrXJZ.png', {
+            caption: 'Название знамени: Запятая с отсечкой; 1 звук c длительностью 1/4',
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: 'Дальше', callback_data: 'Further_2_6' }
+                        { text: 'Дальше', callback_data: 'Further_3_6' }
                     ]
                 ]
             }
@@ -75,99 +76,46 @@ function Lesson_3(ctx, buttonData) {
     }
 
     if (buttonData === "Further_3_6") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf9iA.png', {
-            caption: 'Название знамени: Крюк с подчашием; 2 звука в вниз по 1/2',
+        return ctx.replyWithPhoto('https://ltdfoto.ru/images/2025/04/07/SNIMOK-EKRANA-2025-04-07-V-17.50.49.png', {
+            caption: 'Название знамени: Палка; 1 звук c длительностью 1/2',
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: 'Дальше', callback_data: 'Further_2_7' }
+                        { text: 'Дальше', callback_data: 'Further_3_7' }
                     ]
                 ]
             }
         });
     }
-
     if (buttonData === "Further_3_7") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf9qK.png', {
-            caption: 'Название знамени: Крюк с подвёрткой; 2 звука в вниз по 1/4',
+        return ctx.replyWithPhoto('https://ltdfoto.ru/images/2025/04/07/SNIMOK-EKRANA-2025-04-07-V-17.51.24.png', {
+            caption: 'Название знамени: Палка с отсечкой; 1 звук c длительностью 1/4',
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: 'Дальше', callback_data: 'Further_2_8' }
+                        { text: 'Дальше', callback_data: 'Further_3_8' }
                     ]
                 ]
             }
         });
-    } 
-
+    }
     if (buttonData === "Further_3_8") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf90P.png', {
-            caption: 'Название знамени: Параклит; 1 звук в 1/2',
+        return ctx.replyWithPhoto('https://ltdfoto.ru/images/2025/04/07/SNIMOK-EKRANA-2025-04-07-V-17.52.31.png', {
+            caption: 'Название знамени: Палка с подвёрткой; 2 звук вниз по 1/4',
             reply_markup: {
                 inline_keyboard: [
                     [
-                        { text: 'Дальше', callback_data: 'Further_2_9' }
+                        { text: 'Дальше', callback_data: 'Further_3_9' }
                     ]
                 ]
             }
         });
     }
 
+    
     if (buttonData === "Further_3_9") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf91H.png', {
-            caption: 'Название знамени: Параклит с отсечкой; 1 звук в 1/4',
-            reply_markup: {
-                inline_keyboard: [
-                    [
-                        { text: 'Дальше', callback_data: 'Further_2_10' }
-                    ]
-                ]
-            }
-        });
-    }
-
-    if (buttonData === "Further_3_10") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf92z.png', {
-            caption: 'Название знамени: Параклит с задержкой; 1 звук в 4/4',
-            reply_markup: {
-                inline_keyboard: [
-                    [
-                        { text: 'Дальше', callback_data: 'Further_2_11' }
-                    ]
-                ]
-            }
-        });
-    }
-
-    if (buttonData === "Further_3_11") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf94S.png', {
-            caption: 'Название знамени: Параклит с подчашием; 2 звука вниз по 1/2',
-            reply_markup: {
-                inline_keyboard: [
-                    [
-                        { text: 'Дальше', callback_data: 'Further_2_12' }
-                    ]
-                ]
-            }
-        });
-    }
-
-    if (buttonData === "Further_3_12") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/Yf94u.png', {
-            caption: 'Название знамени: Параклит с подвёрткой; 2 звука вниз по 1/4',
-            reply_markup: {
-                inline_keyboard: [
-                    [
-                        { text: 'Дальше', callback_data: 'Further_2_13' }
-                    ]
-                ]
-            }
-        });
-    }
-
-    if (buttonData === "Further_3_13") {
         return ctx.replyWithPhoto('https://i.yapx.ru/YgABc.png', {
-            caption:'Второй урок окончен!!!) \nТы большой молодец!!! В этом уроке ты узнал 11 знамён) Это табличка со всеми знамёнами из этого урока. Для закрепления просмотри урок ещё раз! Также пройди тест к этому уроку, чтобы узнать как ты его запомнил!!!)',
+            caption:'Третий урок окончен!!!) \nТы большой молодец!!! В этом уроке ты узнал 8 знамён) Это табличка со всеми знамёнами из этого урока. Для закрепления просмотри урок ещё раз! Также пройди тест к этому уроку, чтобы проверить как ты его запомнил!!!)',
                 reply_markup: {
                     inline_keyboard: [[{ text: "Следущий урок", callback_data: "lessons" },{ text: "Пройти тест", callback_data: "button_test" }]],
                 },
@@ -176,4 +124,4 @@ function Lesson_3(ctx, buttonData) {
     }
 };
 
-export default Lesson_2;
+export default Lesson_3;

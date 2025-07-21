@@ -4,7 +4,7 @@ function Staircase_simulator(ctx, buttonData) {
 
     if (buttonData === "staircase_simulator") {
         ctx.replyWithPhoto('https://sun1-22.userapi.com/s/v1/if1/a15ffZf07ZimednrWyzsG568wAQc_mh5zfW-sLbeHl2xp6V0l4s1yuoXH-2nWL2MROj4LW4I.jpg?size=702x944&quality=96&crop=33,33,702,944&ava=1', {
-            caption: 'Это тренажёр лестницы! \nСнизу выбери нужное аудио для тренировки. Прослушай аудио и повтори!!!',
+            caption: 'Это тренажёр лестницы! \nСнизу выбери нужное аудио для тренировки. Прослушай его и повтори!!!',
             reply_markup: {
               inline_keyboard: [
                 [
@@ -14,6 +14,8 @@ function Staircase_simulator(ctx, buttonData) {
                 [
                   { text: "Ут Ми Соль", callback_data: "Ut" },
                   { text: "Ре Фа Ля", callback_data: "Re" }
+                ], [
+                  { text: "Назад", callback_data: "start" },
                 ],
               ],
             },

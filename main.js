@@ -7,6 +7,7 @@ import dotenv from "dotenv";
 import Lesson_1 from './Lessons/Lesson_1.js'
 import Lesson_2 from './Lessons/Lesson_2.js'
 import Staircase_simulator from './Staircase_simulator/Staircase_simulator.js'
+import Lesson_3 from "./Lessons/Lesson_3.js";
 
 dotenv.config();
 
@@ -104,6 +105,7 @@ bot.on("callback_query", (ctx) => {
 
   Lesson_1(ctx, buttonData)
   Lesson_2(ctx, buttonData)
+  Lesson_3(ctx, buttonData)
   Staircase_simulator(ctx, buttonData)
 
   if (buttonData === "lessons") {
