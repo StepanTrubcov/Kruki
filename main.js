@@ -1,13 +1,15 @@
 import { Telegraf } from "telegraf";
-import baza_tests from "./baza_tests.json" with { type: "json" };
 import shuffle from "./shuffle.js";
-import answerStik from "./answerStik.json" with { type: "json" };
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 import Lesson_1 from './Lessons/Lesson_1.js'
 import Lesson_2 from './Lessons/Lesson_2.js'
 import Staircase_simulator from './Staircase_simulator/Staircase_simulator.js'
 import Lesson_3 from "./Lessons/Lesson_3.js";
+import { readFileSync } from 'fs';
+const answerStik = JSON.parse(readFileSync('./answerStik.json', 'utf-8'));
+const baza_tests = JSON.parse(readFileSync('./baza_tests.json', 'utf-8'));
+
 
 dotenv.config();
 
