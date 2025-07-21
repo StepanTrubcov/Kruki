@@ -6,10 +6,21 @@ import Lesson_1 from './Lessons/Lesson_1.js'
 import Lesson_2 from './Lessons/Lesson_2.js'
 import Staircase_simulator from './Staircase_simulator/Staircase_simulator.js'
 import Lesson_3 from "./Lessons/Lesson_3.js";
+import express from 'express';
 import { readFileSync } from 'fs';
 const answerStik = JSON.parse(readFileSync('./answerStik.json', 'utf-8'));
 const baza_tests = JSON.parse(readFileSync('./baza_tests.json', 'utf-8'));
 
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Крюковедческий бот работает!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Сервер запущен на порту ${PORT}`);
+});
 
 dotenv.config();
 
