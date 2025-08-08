@@ -116,6 +116,7 @@ bot.command("lessons", (ctx) => {
         ],
         [
           { text: "Урок 5 - (дербица, переводки, голубчики,чашки)", callback_data: "lesson_5" },
+          { text: "Урок 6 - (статьи)", callback_data: "lesson_6" },
         ],
       ],
     },
@@ -150,6 +151,7 @@ bot.on("callback_query", (ctx) => {
           ],
           [
             { text: "Урок 5 - (дербица, переводки, голубчики,чашки)", callback_data: "lesson_5" },
+            { text: "Урок 6 - (статьи)", callback_data: "lesson_6" },
           ],
         ],
       },
