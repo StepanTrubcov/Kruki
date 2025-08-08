@@ -8,6 +8,7 @@ import Staircase_simulator from './Staircase_simulator/Staircase_simulator.js'
 import Lesson_3 from "./Lessons/Lesson_3.js";
 import Lesson_4 from "./Lessons/Lesson_4.js";
 import Lesson_5 from "./Lessons/Lesson_5.js";
+import Lesson_6 from "./Lessons/Lesson_6.js";
 import express from 'express';
 import { readFileSync } from 'fs';
 const answerStik = JSON.parse(readFileSync('./answerStik.json', 'utf-8'));
@@ -132,6 +133,7 @@ bot.on("callback_query", (ctx) => {
   Lesson_3(ctx, buttonData)
   Lesson_4(ctx, buttonData)
   Lesson_5(ctx, buttonData)
+  Lesson_6(ctx, buttonData)
   Staircase_simulator(ctx, buttonData)
 
   if (buttonData === "lessons") {

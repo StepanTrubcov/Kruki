@@ -102,22 +102,6 @@ function Lesson_5(ctx, buttonData) {
     }
 
     if (buttonData === "Further_5_6") {
-        return ctx.replyWithPhoto('https://i.yapx.ru/YfGW7.png', {
-            caption: `🔄 *Ещё один вариант переводки*\n\n` +
-                     `Альтернативное начертание\n` +
-                     `🎶 *Ритмика:* 3 звука по 1/4\n` +
-                     `⬇️ *Направление:* Нисходящее\n` +
-                     `📜 *Особенность:* Вариация с другим графическим изображением`,
-            parse_mode: "Markdown",
-            reply_markup: {
-                inline_keyboard: [[
-                    { text: "Перейти к голубчикам ➡️", callback_data: "Further_5_7" }
-                ]],
-            },
-        });
-    }
-
-    if (buttonData === "Further_5_7") {
         return ctx.replyWithPhoto('https://i.postimg.cc/Kjsj8wnx/2025-08-06-08-50-08.png', {
             caption: `🕊️ *Голубчик борзый*\n\n` +
                      `Лёгкое и быстрое движение\n` +
@@ -127,13 +111,13 @@ function Lesson_5(ctx, buttonData) {
             parse_mode: "Markdown",
             reply_markup: {
                 inline_keyboard: [[
-                    { text: "Изучить следующий вариант ➡️", callback_data: "Further_5_8" }
+                    { text: "Изучить следующий вариант ➡️", callback_data: "Further_5_7" }
                 ]],
             },
         });
     }
 
-    if (buttonData === "Further_5_8") {
+    if (buttonData === "Further_5_7") {
         return ctx.replyWithPhoto('https://i.postimg.cc/cJZx00Vf/2025-08-06-08-50-40.png', {
             caption: `🕊️ *Голубчик тихий*\n\n` +
                      `Мягкое и плавное движение\n` +
@@ -143,13 +127,13 @@ function Lesson_5(ctx, buttonData) {
             parse_mode: "Markdown",
             reply_markup: {
                 inline_keyboard: [[
-                    { text: "Перейти к чашкам ➡️", callback_data: "Further_5_9" }
+                    { text: "Перейти к чашкам ➡️", callback_data: "Further_5_8" }
                 ]],
             },
         });
     }
 
-    if (buttonData === "Further_5_9") {
+    if (buttonData === "Further_5_8") {
         return ctx.replyWithPhoto('https://i.postimg.cc/GmRthFDB/2025-08-06-08-51-37.png', {
             caption: `☕ *Чашка*\n\n` +
                      `Напоминает форму чаши\n` +
@@ -159,13 +143,13 @@ function Lesson_5(ctx, buttonData) {
             parse_mode: "Markdown",
             reply_markup: {
                 inline_keyboard: [[
-                    { text: "Изучить вариацию ➡️", callback_data: "Further_5_10" }
+                    { text: "Изучить вариацию ➡️", callback_data: "Further_5_9" }
                 ]],
             },
         });
     }
 
-    if (buttonData === "Further_5_10") {
+    if (buttonData === "Further_5_9") {
         return ctx.replyWithPhoto('https://i.postimg.cc/GmRthFDB/2025-08-06-08-51-37.png', {
             caption: `☕ *Чашка с пометою ломка*\n\n` +
                      `Модификация обычной чашки\n` +
@@ -175,13 +159,13 @@ function Lesson_5(ctx, buttonData) {
             parse_mode: "Markdown",
             reply_markup: {
                 inline_keyboard: [[
-                    { text: "Последний знак урока ➡️", callback_data: "Further_5_11" }
+                    { text: "Последний знак урока ➡️", callback_data: "Further_5_10" }
                 ]],
             },
         });
     }
 
-    if (buttonData === "Further_5_11") {
+    if (buttonData === "Further_5_10") {
         return ctx.replyWithPhoto('https://i.postimg.cc/jdc0PP9n/2025-08-06-08-55-10.png', {
             caption: `☕ *Чашка "полная"*\n\n` +
                      `Наиболее насыщенный вариант\n` +
@@ -191,17 +175,18 @@ function Lesson_5(ctx, buttonData) {
             parse_mode: "Markdown",
             reply_markup: {
                 inline_keyboard: [[
-                    { text: "Завершить урок", callback_data: "Further_5_12" }
+                    { text: "Завершить урок", callback_data: "Further_5_11" }
                 ]],
             },
         });
     }
 
-    if (buttonData === "Further_5_12") {
+    if (buttonData === "Further_5_11") {
         return ctx.replyWithPhoto('https://i.postimg.cc/ryY5mPyD/2025-08-06-09-15-01.png', {
             caption: `🎉 *Урок 5 успешно завершён!* 🎊\n\n` +
-                     `Вы освоили 8 важных знамён:\n` +
-                     `- 3 вида переводок\n` +
+                     `Вы освоили 10 важных знамён:\n` +
+                     `- дербицу\n` +
+                     `- 4 вида переводок\n` +
                      `- 2 вида голубчиков\n` +
                      `- 3 вида чашек\n\n` +
                      `📚 *Рекомендации для закрепления:*\n` +
